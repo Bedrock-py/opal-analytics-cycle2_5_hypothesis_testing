@@ -1,0 +1,12 @@
+{ "opal-dataloader-ingest-gallup_cycle2_hypothesis_testing":
+        {
+    	    "description": "NGS2 Gallup Witness Project Cycle 2; Hypothesis Testing",
+            "units": "HypothesisTesting.py",
+            "supports": "",
+            "python_dependencies": "pathlib rpy2",
+            "system_dependencies": "",
+            "api": "analytics",
+            "interface": "analytics",
+            "installation_script": ""
+        }
+}
