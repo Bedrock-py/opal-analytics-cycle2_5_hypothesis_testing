@@ -17,11 +17,11 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 def opal_registration():
     from bedrock.core.opals import manage_opals
-    algs = ['Load']
+    algs = ['HypothesisTesting']
     for alg in algs:
-        success = manage_opals("add", "ingest", "opals.cycle2_5_hypothesis_testing.{0}.{0}".format(alg))
+        success = manage_opals("add", "analytics", "opals.cycle2_5_hypothesis_testing.{0}.{0}".format(alg))
         if not success:
-            success = manage_opals("reload", "ingest", "opals.cycle2_5_hypothesis_testing.{0}.{0}".format(alg))
+            success = manage_opals("reload", "analytics", "opals.cycle2_5_hypothesis_testing.{0}.{0}".format(alg))
             if not success:
                 raise Exception("Unable to install: {}".format(alg))
 
